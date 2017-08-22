@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/lblCardBalance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/card_balance"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/txtCardBalance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="20px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/lblYearlyInterestRate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/yearly_interest_rate"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/txtYearlyInterestRate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="20px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/lblMinimumPayment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/minimum_payment"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/txtMinimumPayment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="20px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/lblFinalCardBalance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/final_card_balance"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/txtFinalCardBalance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="20px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/lblMonthsRemaining"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/months_remaining"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/txtMonthsRemaining"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="20px" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <TextView
+            android:id="@+id/lblInterestPaid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/interest_paid_will_be"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+
+        <EditText
+            android:id="@+id/txtInterestPaid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="20px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/compute"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/clear"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+
+</LinearLayout>
